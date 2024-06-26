@@ -77,8 +77,50 @@
         <li>Finalizar a instalação do Android Studio</li>
         <br />
         <img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/8669d070-7bc7-449e-85ab-acef803e5884" alt="Finalização da instalação do Android Studio" height=500 />
+        <br />
+        <hr />
+        <li>Criar um emulador virtual</li>
+        <br />
+        <img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/429b53f3-72f8-47b6-870d-6a3c076798b7" alt="Criar um emulador virtual" height=500 />
+        <br />
+        <hr />
+        <img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/cd9f068e-10c9-4a73-bced-ebd5f14feb99" alt="Criar um emulador virtual" height=500 />
+        <br />
+        <hr />
+        <li>Por padrão a instalação do Android Studio já criar um emulador virtual</li>
+        <br />
+        <img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/ac586b6a-bfd7-4cc4-9a8b-4f0149641937" alt="Emulador virtual do Android" height=500 />   
       </ol>
-      
+    <li>Adicione ANDROID_HOME à sua variável de ambiente do Windows.</li>
+        Geralmente estará em <code>C:\Users\<strong>SEU USUÁRIO</strong>\AppData\Local\Android\Sdk</code>
+        <br />
+        <br />
+        <blockquote>A pasta AppData é uma pasta oculta necessário liberar sua visualização</blockquote>
+        <br />
+        <br />
+        <ol>
+          <li>Cópia o caminho da pasta <code>Android/Sdk</code></li>
+          <li>Acessa as configurações de Variáveis de Ambiente do Windows</li>
+          <br />
+          <img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/19bc5daf-a43b-4de1-a599-ef902fe42110" alt="Editar variáveis de ambiente do Windows" height=400 /> 
+          <br />
+          <hr />
+          <li>Em Variáveis do sistema clicar em <strong>Novo</strong></li>
+          <br />
+          <img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/3a3a7180-d576-4818-ae84-54856087c8fe" alt="Variáveis do ambiente" height=400 />
+          <br />
+          <hr />
+          <li>Em <strong>Nome da variável</strong> colocar <strong>ANDROID_HOME</strong> e no <strong>Valoda da variável</strong> o caminho</li>
+          <br />
+          <img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/5040fe2b-de30-4d8f-84d4-6a7b8ca6b585" alt="Criar variável de Ambiente do ANDROID_HOME" height=400 />
+          <br />
+          <hr />
+          <li>Depois só clicar em <strong>OK</strong> até fechar as janelas</li>  
+          <br />
+          <li>Para verificar se sua configuração do ANDROID_HOME está feita corretamente, abra um terminal do PowerShell e execute os comandos: <code>echo %ANDROID_HOME%</code> e <code>adb --version</code></li>
+          <br />
+          <img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/1b1b7d25-a789-4dbc-b74d-32823b262755" alt="Verificar a variável de ambiente do ANDROID_HOME" height=400 />
+        </ol>            
 </ol>
 
 
