@@ -445,7 +445,7 @@ adb kill-server
 <p>Após configurar a porta do ADB no Windows, você precisa informar ao terminal do Linux para se conectar a essa porta específica. Para isso, execute o seguinte comando no terminal do Linux:</p>
 
 ```bash
-export ADB_SERVER_SOCKET=tcp:10.0.0.40:5037
+export ADB_SERVER_SOCKET=tcp:00.0.0.00:5037
 ```
 
 4. Obtendo o ID do emulador do Android
