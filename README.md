@@ -1,6 +1,6 @@
 <h1>Configuração do Maestro no Windows</h1>
 
-> Um guia passo a passo para instalar o Maestro no Windows
+<blockquote>Um guia passo a passo para instalar o Maestro no Windows</blockquote>
 
 <p>O Maestro Mobile é uma ferramenta poderosa para teste de aplicativos mobile em plataformas Android e iOS, e funciona excepcionalmente bem em computadores, Windows. No entanto, a configuração no Windows requer algumas etapas específicas que precisam ser seguidas para garantir o funcionamento correto do software. Este guia técnico detalhado irá orientá-lo por todas as etapas necessárias, desde a instalação até a configuração final, para que você possa começar a usar o Maestro Mobile em sua máquina Windows de maneira eficiente.</p>
 
@@ -170,5 +170,88 @@
   <img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/40686662-cfdc-469f-ad64-d7e7643ef0c5" alt="Configuração geral das variáveis de ambiente" height=400 />
 </ol>
 
+<h1>Passos</h1>
 
-   
+1. Instalar o WSL2 (Window Subsystem para Linux)
+2. Instalar o Java 21
+3. Instale o Maestro
+
+<h2>1. Instale o WSL 2</h2>
+
+<p>
+Com o recente Windows 11, a Microsoft tornou muito fácil instalar o Windows Subsystem para Linux, também conhecido como WSL.
+
+Para instalar o WSL, abra o PowerShell como administrador e execute o seguinte comando:
+
+<blockquote>menu Iniciar > PowerShell > clique com o botão direito do mouse > Executar como Administrador</blockquote>
+</p>
+
+<code>wsl --install</code>
+
+<img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/885a85c5-fcba-4b04-848a-6f0ac254b655" alt="Executar o comand no CMD com administrador" height=400 />
+<br />
+<hr />
+<img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/8515c1f3-fe78-4c43-ba03-468043bb4580" alt="Instalação do WSL no Windows" height=400 />
+<br />
+<hr />
+<img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/271257bf-15ff-448b-b325-805c1a0e2883" alt="Instalação do WSL no Windows" height=400 />
+<br />
+<hr />
+<img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/c80caa49-9111-4351-bb65-c278ba3cd6fe" alt="Instalação do WSL no Windows" height=400 />
+<br />
+<hr />
+<img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/5c9dcfa9-5f51-4ac3-8fbf-2c98c8fe8294" alt="Instalação do WSL no Windows" height=400 />
+<br />
+<hr />
+<img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/e9815d20-5296-4e80-93ff-a9a9ae2f871b" alt="Instalação do WSL no Windows" height=400 />
+
+<h3>Habilitar o Subsistema do Windows para Linux - WSL2</h3>
+
+<blockquote>É recomendável passar para a etapa 2, de atualização para o WSL 2</blockquote>
+
+<p>Executar o comando:</p>
+
+<code>dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart</code>
+
+<img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/20ab5aaf-67da-4306-8164-8df41739654f" alt="Instalação do WSL2 no Windows" height=400 />
+
+<h3>Habilitar o recurso de Máquina Virtual</h3>
+
+<p>Abra o PowerShell como administrador e execute:</p>
+
+<code>dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart</code>
+
+<img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/f5aa4f06-8ba0-4845-a570-b802486f8bd5" alt="Instalação do WSL2 no Windows" height=400 />
+
+<h3>Baixar o pacote de atualização do kernel do Linux</h3>
+
+<p>O pacote de atualização do kernel do Linux instala a versão mais recente do <a href="https://github.com/microsoft/WSL2-Linux-Kernel" target="_blank">kernel do Linux WSL 2</a> para executar o WSL dentro da imagem do sistema operacional Windows</p>
+
+1. Baixar o pacote mais recente:
+   * <a href="https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi">Paconte de atualização do kernel do Linux do WSL2 para computadores x64</a>
+
+<p>Depois de executar o comando acima, siga as instruções e reinicie o computador.</p>
+<p>Instalar <a href="https://github.com/microsoft/terminal" target="_blank">Terminal Windows</a> aplicação para experiência terminal refrescante.</p>
+<p>Defina seu nome de usuário e senha do Linux (Algo que você não esquecerá).</p>
+<p>Execute os dois comandos a seguir para atualizar seu sistema Ubuntu. Digite a senha quando solicitado.</p>
+
+<code>sudo apt update</code>
+
+<code>sudo apt upgrade</code>
+
+<h2>2. Instalar Java</h2>
+
+<p>Depois de reiniciar o sistema, abra o aplicativo Terminal do Ubuntu. Digite o seguinte comando:</p>
+
+<code>sudo apt install openjdk-11-jdk</code>
+
+<h2>3. Instale o Maestro</h2>
+
+<p>Instalar o Maestro executar o comando.</p>
+
+<code>curl -Ls "https://get.maestro.mobile.dev" | bash</code>
+
+<p>Verifique sua versão Maestro usando o seguinte comando:</p>
+
+<code>maestro --version</code>
+
