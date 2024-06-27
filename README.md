@@ -120,7 +120,54 @@
           <li>Para verificar se sua configuração do ANDROID_HOME está feita corretamente, abra um terminal do PowerShell e execute os comandos: <code>echo %ANDROID_HOME%</code> e <code>adb --version</code></li>
           <br />
           <img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/1b1b7d25-a789-4dbc-b74d-32823b262755" alt="Verificar a variável de ambiente do ANDROID_HOME" height=400 />
-        </ol>            
+        </ol>
+  <li>Instale o Java JDK e defina <strong>JAVA_HOME</strong> nesse caso está sendo instalado o JDK 17</li>
+    <ol>
+      <li>Acessa a página da Oracle https://www.oracle.com/java/technologies/downloads/#jdk17-windows</li>
+      <br />
+      <img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/49b4c3c5-07bf-4ad6-90ea-d240f91c3279" alt="Baixar o JDK de acordo com a configuração da BIOS do computador" height=500 />
+      <br />
+      <hr />
+      <img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/8f99f3a2-0813-4b72-a66b-fc1610324ec1" alt="Aceita os termos" height=200 />
+      <br />
+      <hr />
+      <li>No próximos passo basta clicar em <strong>Next</strong></li>
+      <br />
+      <img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/ec3a0bec-8c57-4ffa-b61a-89520606fa67" alt="Instalação do JDK" height=400 />
+      <br />
+      <hr />
+      <img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/6fb6c10c-4f32-4195-a5e9-49b9e01ae0a1" alt="Instalação do JDK" height=400 />
+      <br />
+      <hr />
+      <img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/847161db-4463-41c4-981d-8baa7f5e839f" alt="Instalação do JDK" height=400 />
+      <br />
+      <hr />
+      <li>Por fim clicar em <strong>close</strong></li>
+      <br />
+      <img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/ef9ca382-dd63-42ee-9c59-499d2a3b8a04" alt="Instalação do JDK" height=400 />
+      <br />
+      <hr />
+      <li>Acessa a pasta de instalação do Java é cópia o caminha da pasta para configurar a variável de ambiente do Java</li>
+      <br />
+      <img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/7a89e75f-26c5-4042-bc8a-f2906395a47a" alt="Pasta de instalação do Java" height=400 />
+      <br />
+      <hr />
+      <li>Assim como nas configurações do variável de ambiente do <strong>ANDROID_HOME</strong> acessar as configurações de variáveis e criar a variável <strong>JAVA_HOME</strong></li>
+      <br />
+      <img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/db13b1ba-472a-4e81-b691-c6133384b513" alt="Criação da variável de ambiente JAVA_HOME" height=400 />
+      <br />
+      <hr />
+      <li>Para verificar se o Java está instalado corretamente   <code>java --version</code></li>
+      <br />
+      <img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/ede6a425-f37d-4aa7-95b6-f1d56c8fbb9f" alt="Verificação da variável de ambiente JAVA_HOME" height=400 />
+      <br />
+    </ol>
+  <li>Por fim ainda nas váriaves de ambiente apontar o caminho das variáveis do <strong>ANDROD_HOME/platform-tools</strong> e também <strong>JAVA_HOME/bin</strong> como na imagem abaixo</li>
+  <br />
+  <img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/c758d6ce-f8d5-49cb-a5b9-0219e15c4296" alt="Configuração geral das variáveis de ambiente" height=400 />
+  <br />
+  <hr />
+  <img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/40686662-cfdc-469f-ad64-d7e7643ef0c5" alt="Configuração geral das variáveis de ambiente" height=400 />
 </ol>
 
 
