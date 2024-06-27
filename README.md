@@ -432,13 +432,13 @@ adb -a -P 5037 nodaemon server
 <p><strong>Observação</strong> Se você receber um erro como o seguinte</p>
 <p>Execute o comando abaixo e depois tente novamente o comando anterior:</p>
 
-<img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/9ef6d8fd-c94a-4584-9607-97f1f7e1f5d6" alt="Erro ao expor o ADB no Windows" height=500 />
+<img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/9ef6d8fd-c94a-4584-9607-97f1f7e1f5d6" alt="Erro ao expor o ADB no Windows" height=300 />
 
 ```bash
 adb kill-server
 ```
 
-<img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/55138679-b48c-4aa0-90f3-e30537f0875e" alt="Porta do ADB em execução no Windows" height=500 />
+<img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/55138679-b48c-4aa0-90f3-e30537f0875e" alt="Porta do ADB em execução no Windows" height=300 />
 
 3. Conectando o Linux com a porta do Windows
 
@@ -481,7 +481,7 @@ adb install samples.apk
 <strong>Observação</strong> Se você receber um erro como o seguinte
 <p>Instale o APK manualmente</p>
 
-<img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/1ddd382b-17a7-403c-8dc7-3f76a06eba57" alt="Erro ao instalar o apk" height=500 />
+<img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/1ddd382b-17a7-403c-8dc7-3f76a06eba57" alt="Erro ao instalar o apk" height=300 />
 
 
 4. Executando o APK pelo Maestro
