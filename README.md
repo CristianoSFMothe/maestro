@@ -528,7 +528,7 @@ maestro --host 00.0.0.00 studio
 <p>Sou Cristiano da Silva Ferreira, um analista de sistemas com foco em desenvolvimento e teste de software. Desde 2020, venho contribuindo em projetos utilizando diversas tecnologias como Cypress.io, NestJS, MySQL, Robot Framework, Playwright, Selenium, Appium e Maestro Mobile para criar aplicações web e mobile de alta qualidade. Me formei em Sistemas de Informações pela Estácio em 2020, onde adquiri habilidades sólidas em Java, JavaScript e Python, além de certificações em fundamentos da programação, UML e HTML básico. Estou comprometido com o aprendizado contínuo e aprimoramento constante na área de tecnologia.</p>
 
 <div style="text-align: center;">
-    <a href="https://www.linkedin.com/in/cristiano-da-silva-ferreira/" target="_blank">
+    <a href="https://www.linkedin.com/in/cristiano-da-silva-ferreira/" target="_blank" onclick="window.open(this.href, '_blank'); return false;">
         <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
     </a>
     <a href="https://www.instagram.com/cristianoferreiramothe/" target="_blank">
