@@ -57,13 +57,13 @@
         <hr />
         <li>No próximos passo só clicar em <strong>Next</strong> como nas imagens abaixo</li>
         <br />
-        <img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/8863f629-77e4-40b5-a172-c1fce99f3908" alt="Configuração do Android Studio" height=500 />
+        <img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/8863f629-77e4-40b5-a172-c1fce99f3908" alt="Configuração do Android Studio" height=300 />
         <br />
         <hr />
-        <img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/57755ed9-912e-4ff3-bf15-f8b6f9fb861f" alt="Configuração do Android Studio" height=500 />
+        <img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/57755ed9-912e-4ff3-bf15-f8b6f9fb861f" alt="Configuração do Android Studio" height=300 />
         <br />
         <hr />
-        <img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/5b2246c5-5f01-4132-97e8-2dcd20185fee" alt="Configuração do Android Studio" height=500 />
+        <img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/5b2246c5-5f01-4132-97e8-2dcd20185fee" alt="Configuração do Android Studio" height=300 />
         <br />
         <hr />
         <li>Aceite as licenças</li> 
@@ -186,7 +186,9 @@ Para instalar o WSL, abra o PowerShell como administrador e execute o seguinte c
 <blockquote>menu Iniciar > PowerShell > clique com o botão direito do mouse > Executar como Administrador</blockquote>
 </p>
 
-<code>wsl --install</code>
+```bash
+wsl --install
+```
 
 <img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/885a85c5-fcba-4b04-848a-6f0ac254b655" alt="Executar o comand no CMD com administrador" height=400 />
 <br />
@@ -194,7 +196,7 @@ Para instalar o WSL, abra o PowerShell como administrador e execute o seguinte c
 <img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/8515c1f3-fe78-4c43-ba03-468043bb4580" alt="Instalação do WSL no Windows" height=400 />
 <br />
 <hr />
-<img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/271257bf-15ff-448b-b325-805c1a0e2883" alt="Instalação do WSL no Windows" height=400 />
+<img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/271257bf-15ff-448b-b325-805c1a0e2883" alt="Instalação do WSL no Windows" height=250 />
 <br />
 <hr />
 <img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/c80caa49-9111-4351-bb65-c278ba3cd6fe" alt="Instalação do WSL no Windows" height=400 />
@@ -211,7 +213,9 @@ Para instalar o WSL, abra o PowerShell como administrador e execute o seguinte c
 
 <p>Executar o comando:</p>
 
-<code>dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart</code>
+```bash
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+```
 
 <img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/20ab5aaf-67da-4306-8164-8df41739654f" alt="Instalação do WSL2 no Windows" height=400 />
 
@@ -219,7 +223,9 @@ Para instalar o WSL, abra o PowerShell como administrador e execute o seguinte c
 
 <p>Abra o PowerShell como administrador e execute:</p>
 
-<code>dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart</code>
+```bash
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+```
 
 <img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/f5aa4f06-8ba0-4845-a570-b802486f8bd5" alt="Instalação do WSL2 no Windows" height=400 />
 
@@ -229,29 +235,281 @@ Para instalar o WSL, abra o PowerShell como administrador e execute o seguinte c
 
 1. Baixar o pacote mais recente:
    * <a href="https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi">Paconte de atualização do kernel do Linux do WSL2 para computadores x64</a>
+2. Execute o pacote de atualização baixado
+
+<img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/9df9d619-6caf-485d-94d0-0a05dc07e6b1" alt="Instalação do pacote de atualização WSL2 Windows x64" height=250 />
+
+<img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/5efef195-4b8e-4b37-848a-eb4b320864da" alt="Instalação do pacote de atualização WSL2 Windows x64" height=250 />
+
+<img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/f885b2ca-8fb2-4813-bd89-45db6d586f28" alt="Instalação do pacote de atualização WSL2 Windows x64" height=250 />
+
+<h2>Definir o WSL 2 como a sua versão padrão</h2>
+
+<p>Abra o PowerShell e execute este comando para definir o WSL 2 como a versão padrão ao instalar uma nova distribuição do Linux:</p>
+
+```bash
+wsl --set-default-version 2
+```
+
+<img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/bff9081a-888c-4a8e-814f-41c9e9a92af9" alt="Definir o WSL2 como padrão" height=400 />
 
 <p>Depois de executar o comando acima, siga as instruções e reinicie o computador.</p>
+
 <p>Instalar <a href="https://github.com/microsoft/terminal" target="_blank">Terminal Windows</a> aplicação para experiência terminal refrescante.</p>
+
 <p>Defina seu nome de usuário e senha do Linux (Algo que você não esquecerá).</p>
+
+<img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/a6ffd06a-f346-46e1-a30b-5268c748664f" alt="Configuração do Root do Linux" height=400 />
+
 <p>Execute os dois comandos a seguir para atualizar seu sistema Ubuntu. Digite a senha quando solicitado.</p>
 
-<code>sudo apt update</code>
+```bash
+sudo apt update
 
-<code>sudo apt upgrade</code>
+sudo apt upgrade
+```
 
-<h2>2. Instalar Java</h2>
-
-<p>Depois de reiniciar o sistema, abra o aplicativo Terminal do Ubuntu. Digite o seguinte comando:</p>
-
-<code>sudo apt install openjdk-11-jdk</code>
-
-<h2>3. Instale o Maestro</h2>
+<h2>2. Instale o Maestro</h2>
 
 <p>Instalar o Maestro executar o comando.</p>
 
-<code>curl -Ls "https://get.maestro.mobile.dev" | bash</code>
+```bash
+curl -Ls "https://get.maestro.mobile.dev" | bash
+```
+
+<img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/2fcdc871-7c5a-4f87-b732-9c263bdb93ac" alt="Instalar o Maestro" height=500 />
 
 <p>Verifique sua versão Maestro usando o seguinte comando:</p>
 
-<code>maestro --version</code>
+```bash
+maestro --version
+```
+
+<img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/be24f396-9d3f-4b7a-953c-d488c599977f" alt="Verificação da versão Maestro" height=500 />
+
+<h2>Configurá-lo para usar o Android em seu WSL2</h2>
+
+1. Instalar Java
+
+<p>Depois de reiniciar o sistema, abra o aplicativo Terminal do Ubuntu. Digite o seguinte comando:</p>
+
+```bash
+sudo apt install openjdk-11-jdk
+```
+
+<img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/9d87f7be-10d4-4123-ad11-60bc9c878ba0" alt="Instalação do Java" height=500 />
+
+2. Instalar o Unzip
+
+<p>Execute o comando</p>
+
+```bash
+sudo apt install unzip
+```
+
+<img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/c8867e60-981c-4e37-858d-f6d86ede60a1" alt="Instalação Unzip" height=500 />
+
+3. Instalar o sdkmananger
+
+<p>Executar o comando:</p>
+
+```bash
+sudo apt install sdkmanager
+```
+
+<img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/8fd2440f-69c0-451f-8f17-50bf12ac27eb" alt="Instalar o sdkmanager" height=500 />
+
+4. Instala o ADB Devices
+
+<p>Executar o comando</p>
+
+```bash
+sudo apt install adb
+```
+
+<img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/8a3ec0c5-4038-4deb-9938-a72433d79d5b" alt="Instalar o adb devices" height=500 />
+
+5. Crie e navegue até o diretório Android
+
+```bash
+mkdir ~/Android
+
+cd ~/Android
+```
+
+<img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/7a26c446-2909-45dd-b7fd-c2f33f8f6482" alt="Criar e navegar até o diretório Android" height=500 />
+
+6. Baixe o arquivo ZIP das ferramentas de linha de comando do Android
+
+<p>Executar o comando:</p>
+
+```bash
+wget https://dl.google.com/android/repository/commandlinetools-linux-6858069_latest.zip
+```
+
+<img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/394ebe6b-6ee1-4f10-aaf6-feaef98bd130" alt="Download o ZIP do Android" height=500 />
+
+7. Descompacte o arquivo ZIP das ferramentas de linha de comando do Android
+
+<p>Execute o comando:</p>
+
+```bash
+unzip commandlinetools-linux-6858069_latest
+```
+
+8. Crie o diretório de ferramentas e mova os arquivos
+
+<p>Executa co comando:</p>
+
+```bash
+mkdir tools
+
+mv cmdline-tools/* tools/
+```
+
+9. Adicione variáveis ​​de ambiente a `~/.bashrc`
+
+```bash
+echo 'export ANDROID_HOME=$HOME/Android' >> ~/.bashrc
+```
+
+```bash
+echo 'export PATH=$PATH:$ANDROID_HOME/tools/bin/:$PATH' >> ~/.bashrc
+```
+
+```bash
+echo 'export ANDROID_SDK_ROOT=$HOME/Android' >> ~/.bashrc
+```
+
+10. Recarregar `~/.bashrc`
+
+```bash
+source ~/.bashrc
+```
+
+11. Instale ferramentas da plataforma
+
+```bash
+sdkmanager --install "platform-tools"
+```
+
+12. Adicione ferramentas de plataforma a `~/.bashrc`
+
+```bash
+echo 'export PATH=$PATH:$ANDROID_HOME/platform-tools/:$PATH' >> ~/.bashrc
+```
+
+13. Recarregar `~/.bashrc`
+
+```bash
+source ~/.bashrc
+```
+
+<h1>Executando o Maestro no Windows</h1>
+
+<p>É de extrema importância quando for executar o Maestro no Windows, deixa somente o emulador de pé, o Android Studio pode fechar</p>
+
+<blockquote>Sever também para o Linux e MAC</blockquote>
+
+1. Abrir o Windows Terminal e executar o comando:
+
+```bash
+ipconfig
+```
+
+<img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/4d593120-69b8-4150-94db-83caeced3bee" alt="Obter IP da Rede" height=500 />
+
+<p>No seu caso irá utilizar o IPV4 da sua rede</p>
+
+2. Expor a porta do ADB no Windows para ter visibilidade no Linux
+
+<p>Para expor a porta do ADB que está em execução no Windows e torná-la visível no Linux, execute o seguinte comando:</p>
+
+```bash
+adb -a -P 5037 nodaemon server
+```
+
+<p><strong>Observação</strong> Se você receber um erro como o seguinte</p>
+<p>Execute o comando abaixo e depois tente novamente o comando anterior:</p>
+
+<img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/9ef6d8fd-c94a-4584-9607-97f1f7e1f5d6" alt="Erro ao expor o ADB no Windows" height=500 />
+
+```bash
+adb kill-server
+```
+
+<img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/55138679-b48c-4aa0-90f3-e30537f0875e" alt="Porta do ADB em execução no Windows" height=500 />
+
+3. Conectando o Linux com a porta do Windows
+
+<p>Após configurar a porta do ADB no Windows, você precisa informar ao terminal do Linux para se conectar a essa porta específica. Para isso, execute o seguinte comando no terminal do Linux:</p>
+
+```bash
+export ADB_SERVER_SOCKET=tcp:10.0.0.40:5037
+```
+
+4. Obtendo o ID do emulador do Android
+
+<p>Para identificar o ID do emulador que está em execução no Windows e garantir que a comunicação está funcionando corretamente, execute o seguinte comando:</p>
+
+```bash
+adb devices
+```
+
+<h2>Excutar um fluxo simples</h2>
+
+1. Download do arquivo de exemplo no Linux
+
+<p>Execute o seguinte comando:</p>
+
+```bash
+maestro download-samples
+```
+
+2. Acessar a pasta
+
+```bash
+cd ./samples
+```
+
+3. Instalar o aplicativo de exemplo
+
+```bash
+adb install samples.apk
+```
+
+<strong>Observação</strong> Se você receber um erro como o seguinte
+<p>Instale o APK manualmente</p>
+
+<img src="https://github.com/CristianoSFMothe/maestro/assets/68359459/1ddd382b-17a7-403c-8dc7-3f76a06eba57" alt="Erro ao instalar o apk" height=500 />
+
+
+4. Executando o APK pelo Maestro
+Após instalar o APK, podemos executar o Maestro no Windows. Lembre-se de incluir a porta do IPV4 da rede no comando de execução. Aqui está como você pode fazer isso:
+
+```bash
+maestro --host 00.0.0.00 test android-flow.yaml
+```
+
+![primeira-execucao-do-maestro](https://github.com/CristianoSFMothe/maestro/assets/68359459/75459981-f7dd-4538-bf20-78562dcc5f1c)
+
+<p><code>--host 00.0.0.00:</code> Substitua <code>00.0.0.00</code> pelo endereço IP do seu dispositivo na rede.</p>
+
+<p><code>--port 5037:</code> Especifica a porta onde o ADB está escutando.</p>
+
+<p>Isso garantirá que o Maestro se comunique corretamente com o emulador Android através da rede.</p>
+
+5. Executando o Maestro Studio
+
+```bash
+maestro --host 00.0.0.00 studio
+```
+
+![execucao-do-maestro-studio](https://github.com/CristianoSFMothe/maestro/assets/68359459/49d48a4f-3c96-48bf-9554-104a4bbbb38b)
+
+
+<h1>Referências</h1>
+
+1. Configuração do WSL2 no Windows na própria <a href="https://learn.microsoft.com/pt-br/windows/wsl/install-manual" target="_blank">documentação do WSL</a>
+2. Instalação do Maestro dev para o Windows na <a href="https://maestro.mobile.dev/getting-started/installing-maestro/windows" target="_blank">documentação do Maestro Mobile Dev</a>
 
