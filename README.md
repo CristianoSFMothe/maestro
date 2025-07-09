@@ -465,26 +465,26 @@ export ADB_SERVER_SOCKET=tcp:00.0.0.00:5037
 adb devices
 ```
 
-<h2>Excutar um fluxo simples ▶️</h2>
+<h2>Excutar um fluxo simple ▶️</h2>
 
 1. Download do arquivo de exemplo no Linux
 
 <p>Execute o seguinte comando:</p>
 
 ```bash
-maestro download-samples
+maestro download-sample
 ```
 
 2. Acessar a pasta
 
 ```bash
-cd ./samples
+cd ./sample
 ```
 
 3. Instalar o aplicativo de exemplo
 
 ```bash
-adb install samples.apk
+adb install sample.apk
 ```
 
 <strong>Observação</strong> Se você receber um erro como o seguinte
